@@ -1,0 +1,27 @@
+/* hostedWithGeeks WHMCS Cart Template -- Overrides standard_cart */
+
+#order-standard_cart {
+
+  .products .product {
+    background: none;
+    border-color: inherit;
+    padding-top: 0;
+
+    header {
+      background: $color-amber;
+      margin: 0;
+    }
+  }
+
+  .info-text-sm {
+    font-size: 20px;
+  }
+}
+
+body.green #order-standard_cart {
+  .products .product {
+    header {
+      background: $color-green;
+    }
+  }
+}

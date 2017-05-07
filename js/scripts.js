@@ -550,12 +550,12 @@ jQuery(document).ready(function(){
         jQuery(window).resize(function() {
             offset = jQuery("#scrollingPanelContainer").parent('.row').offset();
             maxTopOffset = jQuery("#scrollingPanelContainer").parent('.row').outerHeight() - 35;
-            repositionScrollingSidebar();
+            //repositionScrollingSidebar();
         });
-        jQuery(window).scroll(function() {
-            repositionScrollingSidebar();
-        });
-        repositionScrollingSidebar();
+        //jQuery(window).scroll(function() {
+            //repositionScrollingSidebar();
+        //});
+        //repositionScrollingSidebar();
     }
 
     function repositionScrollingSidebar() {
