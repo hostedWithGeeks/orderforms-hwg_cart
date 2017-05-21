@@ -2,9 +2,29 @@
 
 #order-standard_cart {
 
-  .products .product {
+  .products .product, .product-info, .domain-selection-options .option, .sub-heading span, .order-summary, .summary-container {
     background: none;
     border-color: inherit;
+  }
+
+  .order-summary {
+
+    .total-due-today .amt {
+      font-size: 1.9em;
+    }
+
+    h2 {
+      color: inherit;
+      font-size: 1.7rem;
+    }
+  }
+
+
+  .product-info .product-title {
+    font-size: 1.7em;
+  }
+
+  .products .product {
     padding-top: 0;
 
     header {
@@ -13,8 +33,21 @@
     }
   }
 
+  .order-summary .summary-totals {
+    border-color: inherit;
+  }
+
+  .sub-heading {
+    border: none;
+  }
+
   .info-text-sm {
     font-size: 20px;
+  }
+
+  label, .sub-heading span {
+    font-size: 20px;
+    color: inherit;
   }
 }
 
