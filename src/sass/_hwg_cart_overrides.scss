@@ -2,6 +2,10 @@
 
 #order-standard_cart {
 
+  small, .small {
+    font-size: inherit;
+  }
+
   .products .product, .product-info, .domain-selection-options .option, .sub-heading span, .order-summary, .summary-container {
     background: none;
     border-color: inherit;
@@ -18,7 +22,6 @@
       font-size: 1.7rem;
     }
   }
-
 
   .product-info .product-title {
     font-size: 1.7em;
@@ -37,6 +40,40 @@
     border-color: inherit;
   }
 
+  .view-cart-items {
+    border-bottom-color: inherit;
+
+    .item-group, .item-domain, .item-price .cycle {
+      font-size: 20px;
+      color: inherit;
+    }
+    .item-title, .item-price span {
+      font-size: 1.8rem;
+    }
+  }
+
+  .empty-cart .btn {
+    background: $color-amber;
+  }
+
+  .view-cart-tabs .nav-tabs > li.active > a {
+    background-color: $color-amber;
+    border: 0;
+    font-weight: bold !important;
+  }
+
+  .nav-tabs {
+    border-bottom-color: inherit;
+  }
+
+  .view-cart-tabs .tab-content {
+    background: none;
+  }
+
+  .btn-checkout {
+    padding: 5px 15px;
+  }
+
   .sub-heading {
     border: none;
   }
@@ -45,8 +82,81 @@
     font-size: 20px;
   }
 
-  label, .sub-heading span {
+  label, .sub-heading span, .view-cart-items-header, .view-cart-items .item, .view-cart-items .item:nth-child(2n) {
+    background: none;
     font-size: 20px;
+    color: inherit;
+  }
+
+  .prepend-icon .field-icon {
+    top: 14px;
+
+    i {
+      font-size: 20px;
+      color: inherit;
+      margin-left: -5px;
+    }
+  }
+
+  .view-cart-items .item:nth-child(2n) {
+    border-top: 1px dashed;
+  }
+
+  .order-summary {
+    .subtotal {
+      border-color: inherit;
+    }
+
+    .btn-continue-shopping {
+      font-size: 20px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+  }
+
+  input:not(input.btn), select, textarea, .field {
+    border-color: $color-amber !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #222 !important;
+  }
+
+  input:not(input.btn):focus, select:focus, textarea:focus, .field:focus {
+    border-color: $color-white !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+    color: $color-amber-hover !important;
+  }
+
+  input[type=text], .input-group-addon, .form-control, .dataTables_wrapper .dataTables_filter label .form-control, .field {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px dashed $color-amber-hover;
+    border-width: 1px 0;
+    width: 100%;
+    padding: 0 10px;
+    margin: 1rem 0 0;
+    color: $color-amber-hover;
+    font-size: 20px;
+  }
+
+  .input-group-addon {
+    width: auto;
+  }
+
+  .form-control {
+    margin: 0;
+  }
+
+  input[type=text]:focus, .form-control:focus, .input-group-addon:focus {
+    background: rgba(0, 0, 0, 0.88);
+    border-bottom-style: solid;
+    border-color: $color-amber-hover;
+    color: inherit;
+  }
+
+  ::-moz-placeholder, ::-webkit-input-placeholder {
+    color: $color-amber;
+  }
+
+  .alert-warning .alert-link {
     color: inherit;
   }
 }
@@ -56,5 +166,23 @@ body.green #order-standard_cart {
     header {
       background: $color-green;
     }
+  }
+
+  .empty-cart .btn {
+    background: $color-green;
+  }
+
+  .view-cart-tabs .nav-tabs > li.active > a {
+    background-color: $color-green;
+  }
+
+  .form-control, .input-group-addon, .dataTables_wrapper .dataTables_filter label .form-control {
+    border-color: $color-green-hover;
+    border-width: 1px 0;
+    color: $color-green-hover;
+  }
+
+  ::-moz-placeholder, ::-webkit-input-placeholder {
+    color: $color-green;
   }
 }
